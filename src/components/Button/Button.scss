@@ -1,3 +1,22 @@
 .button {
-   background-color: red;
+   border: none;
+   font-size: 16px;
+   line-height: 24px;
+   padding: 12px;
+   border-radius: 8px;
+}
+.button-style--strong {
+   color: white;
+   background-color: black;
+}
+.button-style--light {
+   color: white;
+   background-color: grey;
+}
+.button-style--transparent {
+   color: white;
+   background-color: lightgrey; 
+}
+.button-selected--true {
+   background-color: blue;
 }

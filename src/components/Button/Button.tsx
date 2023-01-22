@@ -20,14 +20,16 @@ const Button = ({
       labelPlacement = 'end',
       ...props
 }: ButtonProps) => {
-   const mode = selected ? 'button--selected' : 'button--not-selected';
+   const mode = selected ? 'button-selected--true' : '';
    return (
       <button
          type='button'
          className={['button', `button-style--${style}`, mode].join(' ')}
          {...props}
-      >
-         {label}
+      >  
+         {icon}
+         <div>{label}</div>
+         <div>{helpText}</div>
       </button>
    );
 };

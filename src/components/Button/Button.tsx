@@ -6,7 +6,7 @@ export interface ButtonProps {
   helpText: string;
   style?: 'strong' | 'light' | 'transparent';
   selected?: boolean;
-  icon?: React.ReactNode;
+  icon?: JSX.Element; //React.ReactNode;
   labelPlacement?: 'start' | 'end' | 'tooltip';
   onClick?: () => void;
 }
@@ -26,10 +26,15 @@ const Button = ({
          type='button'
          className={['button', `button-style--${style}`, mode].join(' ')}
          {...props}
-      >  
-         {icon}
-         <div>{label}</div>
-         <div>{helpText}</div>
+      >
+      {labelPlacement === 'end' && icon}
+      {labelPlacement === 'tooltip' && icon ? icon : (
+         <div>
+            {label}
+            {helpText ? <div className="helpText">{helpText}</div> : ''}
+         </div>
+      )}
+      {labelPlacement === 'start' && icon}
       </button>
    );
 };

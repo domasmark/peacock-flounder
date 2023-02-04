@@ -15,6 +15,8 @@ const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
 export const FirstExample = Template.bind({});
 FirstExample.args = {
   label: 'First example',
+  icon: <>icon</>,
+  selected: false,
 };
 
 export const SecondExmplae = Template.bind({});

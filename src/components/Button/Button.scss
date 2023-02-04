@@ -1,22 +1,68 @@
+@import "../../css/vars.scss";
+
 .button {
+   @include font-body(medium);
+   padding: var(--sp4) var(--sp8);
+   border-radius: var(--border-radius-4);
+   text-align: left;
    border: none;
-   font-size: 16px;
-   line-height: 24px;
-   padding: 12px;
-   border-radius: 8px;
+   display: flex;
+   align-items: center;
+   gap: var(--sp8);
+   cursor: pointer;
 }
+.button .helpText {
+   @include font-body-small(medium);
+}
+
+//style="strong"
+
 .button-style--strong {
-   color: white;
-   background-color: black;
+               color: var(--color-white);
+   .helpText { color: var(--color-b2)};
+               background-color: var(--color-b7);
+   &:hover {   background-color: var(--color-b6);}
+   &:active {  background-color: var(--color-b5);}
 }
+.button-style--strong.button-selected--true {
+               color: var(--color-b8);
+   .helpText { color: var(--color-b7)};            
+               background-color: var(--color-b4);
+   &:hover {   background-color: var(--color-b3);}
+   &:active {  background-color: var(--color-b2);}
+}
+
+//style="light"
+
 .button-style--light {
-   color: white;
-   background-color: grey;
+               color: var(--color-white);
+   .helpText { color: var(--color-d3)};
+               background-color: var(--color-d8);
+   &:hover {   background-color: var(--color-d7);}
+   &:active {  background-color: var(--color-d6);}
 }
+.button-style--light.button-selected--true {
+               color: var(--color-white);
+   .helpText { color: var(--color-d3)};
+               background-color: var(--color-d6);
+   &:hover {   background-color: var(--color-d5);}
+   &:active {  background-color: var(--color-d6);}
+}
+
+//style="transparent"
+
 .button-style--transparent {
-   color: white;
-   background-color: lightgrey; 
+               color: var(--color-d3);
+   .helpText { color: var(--color-d3)};
+               background-color: transparent;
+   &:hover {   background-color: var(--color-d7);}
+   &:active {  background-color: var(--color-d6);}
 }
-.button-selected--true {
-   background-color: blue;
+.button-style--transparent.button-selected--true {
+               color: var(--color-d3);
+   .helpText { color: var(--color-d3)};
+               background-color: var(--color-d6);
+   &:hover {   background-color: var(--color-d5);}
+   &:active {  background-color: var(--color-d6);
+   }
 }

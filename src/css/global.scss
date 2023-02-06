@@ -1,4 +1,5 @@
 @import "./vars.scss";
+@import "./reset.scss";
 
 html, body {
    @include font-body(regular);

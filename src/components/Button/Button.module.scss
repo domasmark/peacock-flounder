@@ -14,6 +14,14 @@
 .button .helpText {
    @include font-body-small(medium);
 }
+.button.icon-button {
+   padding: var(--sp4);
+}
+.button span {
+   padding: var(--sp2);
+   display: flex;
+   
+}
 
 //style="strong"
 

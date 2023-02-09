@@ -23,17 +23,21 @@ const Button = ({
       tooltipPlacement,
       ...props
 }: ButtonProps) => {
-   const mode = selected ? 'button-selected--true' : '';
+   const mode = selected ? 'button-selected--true' : undefined;
+   const tooltip = labelPlacement==='tooltip' && icon ? 'icon-button' : undefined;
    return (
       <Tooltip placement={tooltipPlacement}>
          <TooltipTrigger>
             <button
                type='button'
-               className={['button', `button-style--${style}`, mode].join(' ')}
+               className={['button', `button-style--${style}`, mode, tooltip].join(' ')}
+               {...labelPlacement === 'tooltip' ? {'aria-label' : [label, helpText].join(', ')} : undefined}
                {...props}
             >
-            {labelPlacement === 'end' && icon}
-            {labelPlacement === 'tooltip' && icon ? icon : (
+               {labelPlacement === 'end' && icon}
+               {labelPlacement === 'tooltip' && <span>{icon}</span> ? (
+               <span>{icon}</span>
+               ) : (
                <div>
                   {label}
                   {helpText ? <div className="helpText">{helpText}</div> : ''}
@@ -42,10 +46,12 @@ const Button = ({
             {labelPlacement === 'start' && icon}
             </button>
          </TooltipTrigger>
+         {labelPlacement === 'tooltip' ? (
          <TooltipContent>
             {label}
             {helpText ? <div className="helpText">{helpText}</div> : ''}
          </TooltipContent>
+         ) : undefined}
       </Tooltip>
    );
 };

@@ -14,7 +14,6 @@ import {
   FloatingPortal
 } from "@floating-ui/react";
 import type { Placement } from "@floating-ui/react-dom";
-import "./Tooltip.module.scss";
 
 interface TooltipOptions {
   initialOpen?: boolean;
@@ -146,7 +145,6 @@ export const TooltipContent = React.forwardRef<
     <FloatingPortal>
       {context.open && (
         <div
-          className='tooltip'
           ref={ref}
           style={{
             position: context.strategy,

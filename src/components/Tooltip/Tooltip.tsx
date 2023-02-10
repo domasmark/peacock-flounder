@@ -1,6 +1,7 @@
 import React from "react";
 import { Placement } from '@floating-ui/react';
 import { TooltipBase, TooltipTrigger, TooltipContent } from "./TooltipBase";
+import "./Tooltip.module.scss";
 
 export interface TooltipProps {
    children: JSX.Element;
@@ -19,11 +20,11 @@ const Tooltip = ({
    return (
        <TooltipBase placement={placement} {...props} >
          <TooltipTrigger>{children}</TooltipTrigger>
-         <TooltipContent>
+         <TooltipContent className='tooltip' >
             { helpText ? (
                <>
                   <div>{label}</div>
-                  <div>{helpText}</div>
+                  <div className="helpText">{helpText}</div>
                </>
             ) : label}
          </TooltipContent>

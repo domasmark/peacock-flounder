@@ -1,6 +1,5 @@
 import { Placement } from "@floating-ui/react";
 import React from "react";
-// import { TooltipBase, TooltipTrigger, TooltipContent } from "../Tooltip/TooltipBase";
 import Tooltip from "../Tooltip";
 import "./Button.module.scss";
 

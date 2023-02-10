@@ -9,7 +9,11 @@ export default {
   component: Button,
   decorators: [
     (Story) => (
-      <div style={{ margin: '6em', textAlign: 'center' }}>
+      <div style={{
+                    margin: '6em',
+                    display: 'flex',
+                    justifyContent: 'center',
+                  }}>
         <Story />
       </div>
     ),

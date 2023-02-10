@@ -1,0 +1,8 @@
+@import "../../css/vars.scss";
+
+.tooltip {
+   border: solid var(--sp1) var(--color-d7);
+   border-radius: var(--border-radius-4);
+   @include font-body(regular);
+   padding: var(--sp4) var(--sp8);
+}

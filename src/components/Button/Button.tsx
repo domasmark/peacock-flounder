@@ -24,9 +24,17 @@ const Button = ({
       tooltipPlacement,
       ...props
 }: ButtonProps) => {
-   const isIconButton = labelPlacement==='tooltip';
-   const iconButtonClass = isIconButton && icon ? 'icon-button' : undefined;
+   const isIconButton = labelPlacement==='tooltip' && icon;
+   const iconButtonClass = isIconButton ? 'icon-button' : undefined;
    const selectedClass = selected ? 'button-selected--true' : undefined;
+   const buttonText = (
+      helpText ? (
+         <div>
+            <div>{label}</div>
+            <div className="helpText">{helpText}</div>
+         </div>
+      ) : label
+   );
    const button = (
       <button
             type='button'
@@ -35,12 +43,7 @@ const Button = ({
             {...props}
          >
             {labelPlacement === 'end' && icon}
-            {isIconButton && icon ? <span>{icon}</span> : (
-               <div>
-                  {label}
-                  {helpText && <div className="helpText">{helpText}</div>}
-               </div>
-            )}
+            {isIconButton && icon ? <span>{icon}</span> : buttonText }
          {labelPlacement === 'start' && icon}
       </button>
    );

@@ -1,0 +1,21 @@
+@import "../../css/vars.scss";
+
+.stack {
+   display: flex;
+   align-items: center;
+   width: fit-content;
+   height: fit-content;
+   gap: var(--sp4);
+   padding: var(--sp4);
+   border-radius: var(--border-radius-8);
+   background-color: var(--color-d9);
+}
+.stack.vertical {
+   flex-direction: column;
+}
+.stack.widthFull {
+   width: 100%;
+}
+.stack.heightFull {
+   height: 100%;
+}

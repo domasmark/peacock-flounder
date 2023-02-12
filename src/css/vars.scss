@@ -3,7 +3,7 @@
 
 :root {
 
-   // Color
+  /*Color*/
 
    --color-d9: #18181B;
    --color-d8: #27272A;
@@ -29,13 +29,13 @@
 
    --color-white: white;
 
-   // Color Typography
+   /*Color Typography*/
 
   --color-font-default: var(--color-white);
   --color-font-secondary: var(--color-d2);
   --color-font-tertiary: var(--color-d3);
 
-   // Color Actions
+   /*Color Actions*/
 
    --color-action-default: var(--color-font-default);
    --color-action-hover: var(--color-font-default);
@@ -47,7 +47,7 @@
    --color-action-border-hover: var(--color-b8);
    --color-action-border-click: var(--color-b8);
 
-   // Spacing
+   /*Spacing*/
 
    --sp0:           0;
    --sp1:   0.0625rem;
@@ -74,7 +74,7 @@
    --sp88:     5.5rem;
    --sp128:      8rem;
 
-   // Border
+   /*Border*/
 
    --border-radius-1: var(--sp1);
    --border-radius-2: var(--sp2);
@@ -83,7 +83,7 @@
    --border-radius-12: var(--sp12);
    --border-radius-16: var(--sp16);
 
-   // Typograpgy
+   /*Typograpgy*/
    
    --font-family-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
    --font-family-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
@@ -101,7 +101,7 @@
 
 }
 
-/* Typography */
+/*Typography*/
 
 @mixin font-largest {
   font-family: var(--font-family-sans);

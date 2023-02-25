@@ -2,6 +2,7 @@ import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 import Stack from './Stack';
 import Button from '../Button';
+import Input from '../Input';
 
 export default {
   title: 'My components/Stack',
@@ -28,12 +29,13 @@ const Template: ComponentStory<typeof Stack> = (args) => <Stack {...args} />;
 
 export const Plain = Template.bind({});
 Plain.args = {
-  children: <>
-              <div style={{width:'100%', background: 'red'}}>Input</div>
-              <div style={{width:'100%', background: 'red', whiteSpace: 'nowrap'}}>Other input</div>
-              <Button label='Lengthy Button'/>
-              <Button label='Button'/>
-            </>,
+  children: 
+    <>
+      <Input/>
+      <Input/>
+      <Button label='Lengthy Button'/>
+      <Button label='Button'/>
+    </>,
   as: 'div',
   widthFull: false,
   heightFull: false,

@@ -29,6 +29,38 @@
 
    --color-white: white;
 
+   /*Color formula*/
+   --hue-x: 166;
+   --saturation-x: 100%;
+   --brightness-x: 39%;
+
+  --color-x9: hsl(var(--hue-x), var(--saturation-x), calc(0.5*var(--brightness-x)));
+  --color-x8: hsl(var(--hue-x), var(--saturation-x), calc(0.7*var(--brightness-x)));
+  --color-x7: hsl(var(--hue-x), var(--saturation-x), var(--brightness-x));
+  --color-x6: hsl(var(--hue-x), var(--saturation-x), calc(1.1*var(--brightness-x)));
+  --color-x5: hsl(var(--hue-x), var(--saturation-x), calc(1.2*var(--brightness-x)));
+  --color-x4: hsl(var(--hue-x), var(--saturation-x), calc(1.4*var(--brightness-x)));
+  --color-x3: hsl(var(--hue-x), var(--saturation-x), calc(1.7*var(--brightness-x)));
+  --color-x2: hsl(var(--hue-x), var(--saturation-x), calc(1.9*var(--brightness-x)));
+  --color-x1: hsl(var(--hue-x), var(--saturation-x), calc(2*var(--brightness-x)));
+  --color-x0: hsl(var(--hue-x), var(--saturation-x), calc(2.3*var(--brightness-x)));
+
+  $base-hue: 200;
+  $base-saturation: 50%;
+  $base-lightness: 50%;
+
+  $step-lightness: 10%;
+
+  @for $i from 9 through 0 {
+    $color-hue: $base-hue;
+    $color-saturation: $base-saturation;
+    $color-lightness: $base-lightness + ($step-lightness * $i);
+
+    $color: hsl($color-hue, $color-saturation, $color-lightness);
+
+    --color-c#{$i}: $color;
+  }
+
    /*Color Typography*/
 
   --color-font-default: var(--color-white);

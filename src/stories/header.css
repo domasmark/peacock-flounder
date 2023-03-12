@@ -20,11 +20,11 @@ h1 {
   display: inline-block;
   vertical-align: top;
 }
-
+/* 
 button + button {
   margin-left: 10px;
-}
-
+} */
+/* 
 .welcome {
   color: #333;
   font-size: 14px;

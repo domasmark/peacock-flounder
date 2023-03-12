@@ -7,12 +7,12 @@ export const parameters = {
     },
   },
   backgrounds: {
-    default: 'Dark',
-    values: [
-      {
-        name: 'Dark',
-        value: '#1E1E1E',
-      }
-    ],
+    default: 'dark',
+    // values: [
+    //   {
+    //     name: 'dark',
+    //     value: '#xxxxxx',
+    //   }
+    // ],
   },
 }

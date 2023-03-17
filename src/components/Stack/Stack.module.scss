@@ -2,13 +2,9 @@
 
 .stack {
    display: flex;
-   align-items: center;
+   align-items: flex-start;
    width: fit-content;
    height: fit-content;
-   gap: var(--sp4);
-   padding: var(--sp4);
-   border-radius: var(--border-radius-8);
-   background-color: var(--color-d9);
 }
 .stack.vertical {
    flex-direction: column;
@@ -18,4 +14,28 @@
 }
 .stack.heightFull {
    height: 100%;
+}
+
+.stack.style--blank {
+   gap: var(--sp0);
+   padding: var(--sp0);
+   border-radius: 0;
+   background-color: transparent;
+   border: none;
+}
+.stack.style--box {
+   margin: calc(var(--sp1)/-2);
+   box-sizing: border-box;
+   gap: var(--sp4);
+   padding: var(--sp8);
+   border-radius: 0;
+   background-color: var(--color-d8);
+   border: solid var(--sp1) var(--color-d7);
+}
+.stack.style--board {
+   gap: var(--sp4);
+   padding: var(--sp4);
+   border-radius: var(--border-radius-8);
+   background-color: var(--color-d9);
+   border: none;
 }

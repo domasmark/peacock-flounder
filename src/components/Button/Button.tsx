@@ -11,6 +11,7 @@ export interface ButtonProps {
   icon?: JSX.Element; //React.ReactNode;
   labelPlacement?: 'start' | 'end' | 'tooltip';
   tooltipPlacement?: Placement;
+  wFull?: boolean;
   onClick?: () => void;
 }
 
@@ -22,11 +23,13 @@ const Button = ({
       icon,
       labelPlacement = 'end',
       tooltipPlacement,
+      wFull = false,
       ...props
 }: ButtonProps) => {
    const isIconButton = labelPlacement==='tooltip' && icon;
    const iconButtonClass = isIconButton ? 'icon-button' : undefined;
-   const selectedClass = selected ? 'button-selected--true' : undefined;
+   const selectedClass = selected ? 'selected--true' : undefined;
+   const wFullClass = wFull ? 'width-full--true' : undefined;
    const buttonText = (
       helpText ? (
          <div>
@@ -38,7 +41,7 @@ const Button = ({
    const button = (
       <button
             type='button'
-            className={['button', `button-style--${style}`, selectedClass, iconButtonClass].join(' ')}
+            className={['button', `style--${style}`, selectedClass, iconButtonClass, wFullClass].join(' ')}
             {...isIconButton && {'aria-label' : [label, helpText].join(', ')}}
             {...props}
          >

@@ -37,7 +37,8 @@ Plain.args = {
       <Button label='Button'/>
     </>,
   as: 'div',
-  widthFull: false,
-  heightFull: false,
+  style: 'board',
+  wFull: false,
+  hFull: false,
   vertical: false,
 };

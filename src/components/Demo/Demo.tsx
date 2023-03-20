@@ -1,5 +1,6 @@
 import React from 'react';
 import Button from '../Button';
+import { IconMinus } from '../Icons';
 import Input from '../Input';
 import Stack from '../Stack/Stack';
 
@@ -23,25 +24,20 @@ const layers = [
 
 const Demo = ({...inputProps }) => (
    <Stack wFull hFull vertical>
-      <Stack as="header" style="box" wFull>
+      <Stack as="header" alignItems="center" style="box" border="bottom" wFull>
          <Stack wFull>Logo</Stack>
             <Button style="light" label="Cancel" />
             <Button style="strong" label="Confirm" />
       </Stack>
-
       <Stack wFull hFull>
-         {/*Layers panel*/}
-         <Stack as="nav" style="box" vertical hFull >
+         <Stack as="nav" style="box" border="right" vertical hFull >
             { layers.map((layer => <Button style="transparent" label={layer.label} wFull />))}
          </Stack>
-         
          <Stack wFull hFull>Canvas area</Stack>
-         
-         {/*Inspector panel*/}
-         <Stack as="nav" style="box" vertical hFull >
+         <Stack as="nav" style="box" border="left" vertical hFull >
             <Input placeholder="Filter..."/>
             { changes.map((log =>
-               <Button style="transparent" label={log.label} helpText={log.date} wFull />
+               <Button style="transparent" icon={<IconMinus/>} label={log.label} helpText={log.date} wFull />
             ))}
          </Stack>
       </Stack>

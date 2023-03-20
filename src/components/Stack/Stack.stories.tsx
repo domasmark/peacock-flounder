@@ -1,6 +1,6 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import Stack from './Stack';
+import Stack, { StackProps } from './Stack';
 import Button from '../Button';
 import Input from '../Input';
 
@@ -25,7 +25,7 @@ export default {
 } as ComponentMeta<typeof Stack>;
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
-const Template: ComponentStory<typeof Stack> = (args) => <Stack {...args} />;
+const Template: ComponentStory<typeof Stack> = (args: StackProps) => <Stack {...args} />;
 
 export const Plain = Template.bind({});
 Plain.args = {
@@ -38,6 +38,8 @@ Plain.args = {
     </>,
   as: 'div',
   style: 'board',
+  alignItems: 'flex-start',
+  border: 'none',
   wFull: false,
   hFull: false,
   vertical: false,

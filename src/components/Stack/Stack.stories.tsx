@@ -7,6 +7,11 @@ import Input from '../Input';
 export default {
   title: 'My components/Stack',
   component: Stack,
+  argTypes: {
+    style: { control: 'radio' },
+    alignItems: {control: 'select'},
+    as: {control: 'text'},
+  },
   parameters: {
     // More on Story layout: https://storybook.js.org/docs/react/configure/story-layout
     layout: 'fullscreen',

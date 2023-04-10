@@ -1,0 +1,15 @@
+.input { @apply
+   px-[calc(theme(space.2)_-_theme(space.px))]
+   py-[calc(theme(space.1)_-_theme(space.px))] w-full
+   bg-ferrum-shade-3
+   hover:bg-ferrum-shade-2
+   font-medium
+   text-ferrum-tint-2
+   placeholder:text-ferrum-tint-6
+   border border-ferrum rounded
+   hover:border-ferrum-tint-7
+   focus:outline-none
+   focus:border-cobalt-tint-7
+   focus:ring-2 focus:ring-cobalt-tint-7
+   transition-colors;
+}

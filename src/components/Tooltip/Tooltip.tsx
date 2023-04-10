@@ -1,7 +1,6 @@
 import React from "react";
 import { Placement } from '@floating-ui/react';
 import { TooltipBase, TooltipTrigger, TooltipContent } from "./TooltipBase";
-import "./Tooltip.module.scss";
 
 export interface TooltipProps {
    children: JSX.Element;

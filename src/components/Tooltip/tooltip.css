@@ -1,0 +1,9 @@
+.tooltip {
+   @apply border border-ferrum rounded
+   bg-ferrum-shade-4
+   text-xs font-bold text-ferrum-tint-2
+   px-2 py-1;
+}
+.tooltip .helpText {
+   @apply font-medium text-ferrum-tint-6;
+}

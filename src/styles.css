@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+@tailwind base;
+@tailwind components;
+@import "./components/Button/button.css";
+@import "./components/Input/input.css";
+@import "./components/Select/select.css";
+@import "./components/Tooltip/tooltip.css";
+@import "./components/Stack/stack.css";
+@tailwind utilities;
+
+body {
+   -webkit-font-smoothing: antialiased;
+   @apply text-ferrum-tint-2;
+}

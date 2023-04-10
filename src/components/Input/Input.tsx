@@ -1,9 +1,7 @@
 import React from 'react';
-import "./Input.module.scss";
 
-interface Props extends React.InputHTMLAttributes<HTMLInputElement> {
-
-}
+// interface Props extends React.InputHTMLAttributes<HTMLInputElement> {
+// }
 
 const Input = ({...inputProps }) => (
    <input {...inputProps}

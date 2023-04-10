@@ -1,14 +1,13 @@
 import { Placement } from "@floating-ui/react";
 import React from "react";
-import Tooltip from "../Tooltip";
-import "./Button.module.scss";
+import Tooltip from "../Tooltip"
 
 export interface ButtonProps {
   label: string;
   helpText?: string;
   style?: 'strong' | 'light' | 'transparent';
   selected?: boolean;
-  icon?: JSX.Element; //React.ReactNode;
+  icon?: JSX.Element;
   labelPlacement?: 'start' | 'end' | 'tooltip';
   tooltipPlacement?: Placement;
   wFull?: boolean;
@@ -29,7 +28,7 @@ const Button = ({
    const isIconButton = labelPlacement==='tooltip' && icon;
    const iconButtonClass = isIconButton ? 'icon-button' : undefined;
    const selectedClass = selected ? 'selected--true' : undefined;
-   const wFullClass = wFull ? 'width-full--true' : undefined;
+   const wFullClass = wFull ? 'w-full' : undefined;
    const buttonText = (
       helpText ? (
          <div>

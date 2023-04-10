@@ -1,9 +1,7 @@
 import React from 'react';
-import "./Select.module.scss";
 
-interface Props extends React.InputHTMLAttributes<HTMLInputElement> {
-
-}
+// interface Props extends React.InputHTMLAttributes<HTMLInputElement> {
+// }
 
 const Select = ({...inputProps }) => (
    <select {...inputProps}

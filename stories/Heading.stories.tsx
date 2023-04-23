@@ -3,7 +3,7 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 import Heading from '../src/components/Heading';
 
 export default {
-   title: 'My components/Heading',
+   title: 'Components/Heading',
    component: Heading,
    parameters: {
       layout: 'centered',

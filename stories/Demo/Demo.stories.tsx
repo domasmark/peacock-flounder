@@ -3,7 +3,7 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 import Demo from './Demo';
 
 export default {
-  title: 'Demo/App',
+  title: 'Demo/Editor',
   component: Demo,
   parameters: {
     layout: 'fullscreen',
@@ -19,7 +19,7 @@ export default {
   ],
 } as ComponentMeta<typeof Demo>;
 
-const Template: ComponentStory<typeof Demo> = (args) => <Demo {...args} />;
+const Template: ComponentStory<typeof Demo> = () => <Demo />;
 
-export const App = Template.bind({});
-App.args = {};
+export const Editor = Template.bind({});
+Editor.args = {};

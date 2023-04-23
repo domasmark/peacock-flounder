@@ -5,7 +5,7 @@ import Button from '../src/components/Button';
 import Input from '../src/components/Input';
 
 export default {
-  title: 'My components/Stack',
+  title: 'Components/Stack',
   component: Stack,
   argTypes: {
     style: { control: 'radio' },
@@ -38,9 +38,9 @@ Plain.args = {
       <Button label='Button'/>
     </>,
   as: 'div',
-  style: 'board',
+  variant: 'slip',
   alignItems: 'flex-start',
-  border: 'none',
+  border: {bottom: true},
   wFull: false,
   hFull: false,
   vertical: false,

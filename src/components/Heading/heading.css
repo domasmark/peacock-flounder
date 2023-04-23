@@ -1,3 +1,6 @@
+.heading {                 @apply text-ferrum-2t;}
+.heading.secondary {       @apply text-ferrum-7t;}
+
 .heading.size--largest {   @apply text-title-largest;}
 .heading.size--larger {    @apply text-title-larger;}
 .heading.size--large {     @apply text-title-large;}

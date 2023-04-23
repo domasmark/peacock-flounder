@@ -3,6 +3,7 @@ import Button from '../../src/components/Button';
 import { IconAlignCenter, IconAlignJustify, IconAlignLeft, IconAlignRight, IconArrowLeft, IconBold, IconChevronDown, IconChevronRight, IconCode, IconCopy, IconDot, IconGithub, IconItalic, IconLink, IconMinus, IconPlus, IconStrike } from '../../src/components/Icons';
 import Input from '../../src/components/Input';
 import Stack from '../../src/components/Stack/Stack';
+import Heading from '../../src/components/Heading';
 
 interface Props extends React.InputHTMLAttributes<HTMLInputElement> {
 
@@ -38,7 +39,7 @@ const inlineTextStyleControlBar = [
 ];
 
 const Canvas = () => (
-   <Stack style='blank' wFull>What's that?</Stack>
+   <Stack variant='blank' wFull>What's that?</Stack>
 );
 const Header = () => {
 
@@ -54,10 +55,10 @@ const Header = () => {
    };
 
    return (
-      <Stack as="header" alignItems="center" style="box" border={{bottom:true}} wFull>
+      <Stack as="header" alignItems="center" variant="card" border={{bottom:true}} wFull>
       <Button style='light' icon={<IconArrowLeft/>}  label='Back to All Projects'/>
          <Stack wFull alignItems='center' gap={2} justifyContent="center">
-            <Stack style='board'>
+            <Stack variant='slip'>
                { textAlignToggle.map(((button, index) =>
                   <Button
                      key={index} 
@@ -93,13 +94,13 @@ const Demo = () => (
    <Stack wFull hFull vertical>
       <Header/>
       <Stack wFull hFull>
-         <Stack as="nav" style="box" border={{right:true}} vertical hFull wMin="240px" >
+         <Stack as="nav" variant="card" border={{right:true}} vertical hFull wMin="240px" >
             <Input placeholder="Filter layers..."/>
             { layers.map(((layer) => <Button style="transparent" icon={<IconChevronRight/>} label={layer.label} wFull />))}
          </Stack>
          <Stack wFull hFull><Canvas/></Stack>
-         <Stack as="nav" style="box" border={{left:true}} vertical hFull wMin="240px" >
-            Version history
+         <Stack as="nav" variant="card" border={{left:true}} vertical hFull wMin="240px" >
+            <Heading as="h2" size='small' secondary>Version history</Heading>
             { changes.map((log =>
                <Button style="transparent" icon={<IconDot/>} label={log.label} helpText={log.date} wFull />
             ))}

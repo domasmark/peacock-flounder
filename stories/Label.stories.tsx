@@ -4,7 +4,7 @@ import Label from '../src/components/Label';
 import Input from '../src/components/Input';
 
 export default {
-   title: 'My components/Label',
+   title: 'Components/Label',
    component: Label,
    parameters: {
       layout: 'centered',

@@ -3,7 +3,7 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 import Input from '../src/components/Input/Input';
 
 export default {
-  title: 'My components/Input',
+  title: 'Components/Input',
   component: Input,
   parameters: {
     // More on Story layout: https://storybook.js.org/docs/react/configure/story-layout

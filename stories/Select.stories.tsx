@@ -3,7 +3,7 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 import Select from '../src/components/Select';
 
 export default {
-  title: 'My components/Select',
+  title: 'Components/Select',
   component: Select,
   parameters: {
     // More on Story layout: https://storybook.js.org/docs/react/configure/story-layout

@@ -5,7 +5,7 @@ import { IconChevronDown, IconGithub, IconMore, IconRemove } from '../src/compon
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
-  title: 'My components/Button',
+  title: 'Components/Button',
   component: Button,
   parameters: {
     layout: 'centered',

@@ -3,7 +3,7 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 import TextArea from '../src/components/TextArea/TextArea';
 
 export default {
-  title: 'My components/TextArea',
+  title: 'Components/TextArea',
   component: TextArea,
   parameters: {
     layout: 'centered',

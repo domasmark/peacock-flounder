@@ -4,7 +4,7 @@ import Stack from '../src/components/Stack';
 import Text from '../src/components/Text';
 
 export default {
-   title: 'My components/Text',
+   title: 'Components/Text',
    component: Text,
    parameters: {
       layout: 'centered',

@@ -12,7 +12,7 @@ const UncontrolledTooltip: React.FC = () => {
 };
 
 export default {
-  title: 'My components/Tooltip',
+  title: 'Components/Tooltip',
   component: UncontrolledTooltip,
   parameters: {
     layout: 'centered',

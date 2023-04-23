@@ -11,11 +11,12 @@ type BorderProps = {
 export interface StackProps extends PropsWithChildren {
    children?: React.ReactNode;
    as?: keyof JSX.IntrinsicElements;
-   style?: 'blank' | 'box' | 'board';
+   variant?: 'blank' | 'card' | 'slip';
    alignItems?: 'center' | 'flex-start' | 'flex-end' | 'stretch' | 'baseline';
    justifyContent?: 'start' | 'end' | 'center' | 'between';
    border?: BorderProps;
    gap?: 'none' | 1 | 2;
+   gridArea?: string;
    vertical?: boolean;
    wFull?: boolean;
    hFull?: boolean;
@@ -28,13 +29,14 @@ export interface StackProps extends PropsWithChildren {
 const Stack: React.FC<StackProps> = ({
       children = undefined,
       as = 'div',
-      style = 'blank',
+      variant = 'blank',
       border,
       vertical = false,
       wFull = false,
       hFull = false,
       wMin, wMax, hMin, hMax,
       gap,
+      gridArea,
       alignItems, justifyContent,
       ...props
 }: StackProps) => {
@@ -50,7 +52,7 @@ const Stack: React.FC<StackProps> = ({
       <Tag
          className={[
                      'stack',
-                     `style--${style}`,
+                     `variant--${variant}`,
                      `alignItems--${alignItems}`,
                      `justifyContent--${justifyContent}`,
                      borderClasses,
@@ -61,7 +63,8 @@ const Stack: React.FC<StackProps> = ({
                      ].join(' ')}
          style={{
             minWidth: wMin, maxWidth:wMax,
-            minHeight:hMin, maxHeight:hMax
+            minHeight:hMin, maxHeight:hMax,
+            gridArea: gridArea
          }} {...props}>   
             {children}
       </Tag>

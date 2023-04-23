@@ -1,13 +1,13 @@
 .stack {                            
    @apply flex items-start w-fit h-fit;
 }
-.stack.style--blank {
+.stack.variant--blank {
    @apply gap-0 p-0 rounded-none bg-transparent border-transparent border-0;
 }
-.stack.style--box {
+.stack.variant--card {
    @apply gap-1 p-2 rounded-none bg-ferrum-2s border-ferrum;
 }
-.stack.style--board {
+.stack.variant--slip {
    @apply gap-1 p-1 rounded-lg bg-ferrum-5s border-transparent border-0;
 }
 

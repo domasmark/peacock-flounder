@@ -1,4 +1,4 @@
-.typography {         @apply text-base;}
+.typography {         @apply text-base text-ferrum-2t;}
 .typography.small {   @apply text-sm;}
 
 .typography ul {      @apply list-disc list-inside;}

@@ -5,6 +5,7 @@ export interface HeadingProps extends PropsWithChildren {
   as?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
   size?: 'largest' | 'larger' | 'large' | 'default' | 'small' | 'tiny';
   secondary?: boolean;
+  className?: string;
 }
 
 const Heading: React.FC<HeadingProps> = ({
@@ -12,6 +13,7 @@ const Heading: React.FC<HeadingProps> = ({
       as = 'h1',
       size = 'default',
       secondary,
+      className,
       ...props
 }: HeadingProps) => {
    const Tag = as;
@@ -21,6 +23,7 @@ const Heading: React.FC<HeadingProps> = ({
                      'heading',
                      `size--${size}`,
                      secondary && 'secondary',
+                     className,
                      ].join(' ')}
          style={{
          }} {...props}>   

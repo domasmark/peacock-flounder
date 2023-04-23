@@ -11,6 +11,7 @@ type BorderProps = {
 export interface StackProps extends PropsWithChildren {
    children?: React.ReactNode;
    as?: keyof JSX.IntrinsicElements;
+   className?: string;
    variant?: 'blank' | 'card' | 'slip';
    alignItems?: 'center' | 'flex-start' | 'flex-end' | 'stretch' | 'baseline';
    justifyContent?: 'start' | 'end' | 'center' | 'between';
@@ -29,6 +30,7 @@ export interface StackProps extends PropsWithChildren {
 const Stack: React.FC<StackProps> = ({
       children = undefined,
       as = 'div',
+      className,
       variant = 'blank',
       border,
       vertical = false,
@@ -60,6 +62,7 @@ const Stack: React.FC<StackProps> = ({
                      wFull ? 'w-full' : undefined,
                      hFull ? 'h-full' : undefined,
                      vertical ? 'flex-col' : undefined,
+                     className,
                      ].join(' ')}
          style={{
             minWidth: wMin, maxWidth:wMax,

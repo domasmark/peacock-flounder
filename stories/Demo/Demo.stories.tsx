@@ -1,10 +1,10 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import Demo from './Demo';
+import DemoEditor from './DemoEditor';
 
 export default {
   title: 'Demo/Editor',
-  component: Demo,
+  component: DemoEditor,
   parameters: {
     layout: 'fullscreen',
   },
@@ -17,9 +17,9 @@ export default {
       </div>
     ),
   ],
-} as ComponentMeta<typeof Demo>;
+} as ComponentMeta<typeof DemoEditor>;
 
-const Template: ComponentStory<typeof Demo> = () => <Demo />;
+const Template: ComponentStory<typeof DemoEditor> = () => <DemoEditor />;
 
 export const Editor = Template.bind({});
 Editor.args = {};

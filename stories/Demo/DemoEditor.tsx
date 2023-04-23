@@ -4,6 +4,7 @@ import { IconAlignCenter, IconAlignJustify, IconAlignLeft, IconAlignRight, IconA
 import Input from '../../src/components/Input';
 import Stack from '../../src/components/Stack/Stack';
 import Heading from '../../src/components/Heading';
+import Text from '../../src/components/Text';
 
 interface Props extends React.InputHTMLAttributes<HTMLInputElement> {
 
@@ -24,10 +25,10 @@ const layers = [
 ];
 
 const textAlignToggle = [
-   { label: 'Left', icon: <IconAlignLeft/>, selected: true },
-   { label: 'Center', icon: <IconAlignCenter/>, selected: false },
-   { label: 'Right', icon: <IconAlignRight/>, selected: false },
-   { label: 'Justified', icon: <IconAlignJustify/>, selected: false },
+   { label: 'Align Left', icon: <IconAlignLeft/>, selected: true },
+   { label: 'Align Center', icon: <IconAlignCenter/>, selected: false },
+   { label: 'Align Right', icon: <IconAlignRight/>, selected: false },
+   { label: 'Align Justified', icon: <IconAlignJustify/>, selected: false },
 ];
 
 const inlineTextStyleControlBar = [
@@ -38,8 +39,20 @@ const inlineTextStyleControlBar = [
    { label: 'Link', icon: <IconLink/>, selected: false },
 ];
 
+const textContent = (
+   <>
+      <Heading as='h1' size='largest' className=' mt-10'>Template</Heading>
+      <Text as='p' >A free and open-source documentation website template.</Text>
+      <Text as='p' className=' mt-3'>Portal template is built with Next.js and styled with tailwindcss.</Text>
+      <Text as='p' className=' mt-3'>The layout and every component in the template is customizable using predefined css variables. You're welcome to visit other pages in this template to learn more about each component.</Text>
+      <Heading as='h2' size='large' className='mt-8' >Get started</Heading>
+      <Text as='p' className=' mt-3'>The easiest way to get started is to clone the repository from GitHub and start playing around. You can find the instructions for running the project on our GitHub readme.</Text>
+      <Text as='p' className=' mt-3'>You can also click the buttons below to clone and deploy the template to Vercel or Netlify.</Text>
+   </>
+);
+
 const Canvas = () => (
-   <Stack variant='blank' wFull>What's that?</Stack>
+   <Stack variant='blank' vertical wFull className="mx-20">{textContent}</Stack>
 );
 const Header = () => {
 
@@ -90,7 +103,7 @@ const Header = () => {
    );
 };
 
-const Demo = () => (
+const DemoEditor = () => (
    <Stack wFull hFull vertical>
       <Header/>
       <Stack wFull hFull>
@@ -100,7 +113,7 @@ const Demo = () => (
          </Stack>
          <Stack wFull hFull><Canvas/></Stack>
          <Stack as="nav" variant="card" border={{left:true}} vertical hFull wMin="240px" >
-            <Heading as="h2" size='small' secondary>Version history</Heading>
+            <Heading as="h2" size='small' secondary className='ml-2 my-2'>Version history</Heading>
             { changes.map((log =>
                <Button variant="transparent" icon={<IconDot/>} label={log.label} helpText={log.date} wFull />
             ))}
@@ -109,4 +122,4 @@ const Demo = () => (
    </Stack>
 );
 
-export default Demo;
+export default DemoEditor;

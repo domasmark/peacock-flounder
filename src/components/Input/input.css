@@ -13,3 +13,6 @@
    focus:ring-2 focus:ring-cobalt-7t
    transition-colors;
 }
+.status--error .input {
+   @apply border-red-500 focus:ring-red-500;
+}

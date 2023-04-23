@@ -1,5 +1,2 @@
-.typography {         @apply text-base;}
-.typography.small {   @apply text-sm;}
-
-.typography ul {      @apply list-disc list-inside;}
-.typography ol {      @apply list-decimal list-inside;}
+.label .helperText {                @apply text-sm text-ferrum-7t flex gap-1 mt-1;}
+.label.status--error .helperText {  @apply text-rose-500;}

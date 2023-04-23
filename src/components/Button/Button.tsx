@@ -3,7 +3,8 @@ import React from "react";
 import Tooltip from "../Tooltip"
 
 export interface ButtonProps {
-  label: string;
+  label?: string;
+  children?: string;
   helpText?: string;
   variant?: 'strong' | 'light' | 'transparent';
   selected?: boolean;
@@ -16,6 +17,7 @@ export interface ButtonProps {
 
 const Button = ({
       label,
+      children,
       helpText,
       variant = 'strong',
       selected = false,
@@ -32,10 +34,10 @@ const Button = ({
    const buttonText = (
       helpText ? (
          <div>
-            <div>{label}</div>
+            <div>{label || children}</div>
             <div className="helpText">{helpText}</div>
          </div>
-      ) : label
+      ) : (label || children)
    );
    const button = (
       <button
@@ -52,7 +54,7 @@ const Button = ({
 
    return (
       isIconButton ?
-      <Tooltip label={label} helpText={helpText} placement={tooltipPlacement} >
+      <Tooltip label={label || children} helpText={helpText} placement={tooltipPlacement} >
          {button}
       </Tooltip> : button
    );

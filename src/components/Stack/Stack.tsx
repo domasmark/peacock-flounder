@@ -17,7 +17,7 @@ export interface StackProps extends PropsWithChildren {
    justifyContent?: 'start' | 'end' | 'center' | 'between';
    border?: BorderProps;
    gap?: 'none' | 1 | 2;
-   gridArea?: string;
+   area?: string;
    vertical?: boolean;
    wFull?: boolean;
    hFull?: boolean;
@@ -38,7 +38,7 @@ const Stack: React.FC<StackProps> = ({
       hFull = false,
       wMin, wMax, hMin, hMax,
       gap,
-      gridArea,
+      area,
       alignItems, justifyContent,
       ...props
 }: StackProps) => {
@@ -67,7 +67,7 @@ const Stack: React.FC<StackProps> = ({
          style={{
             minWidth: wMin, maxWidth:wMax,
             minHeight:hMin, maxHeight:hMax,
-            gridArea: gridArea
+            gridArea:area,
          }} {...props}>   
             {children}
       </Tag>

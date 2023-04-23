@@ -4,7 +4,7 @@ import { TooltipBase, TooltipTrigger, TooltipContent } from "./TooltipBase";
 
 export interface TooltipProps {
    children: JSX.Element;
-   label: string;
+   label?: string;
    helpText?: string;
    placement?: Placement;
  }

@@ -6,10 +6,6 @@ import Stack from '../../src/components/Stack/Stack';
 import Heading from '../../src/components/Heading';
 import Text from '../../src/components/Text';
 
-interface Props extends React.InputHTMLAttributes<HTMLInputElement> {
-
-}
-
 const layers = [
    { label: 'Layer 1' },
    { label: 'Layer 2' },

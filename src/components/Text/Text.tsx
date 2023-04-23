@@ -4,6 +4,7 @@ export interface TextProps extends PropsWithChildren {
   children: string | React.ReactNode;
   as?: 'p' | 'div' | 'span' | 'ul' | 'ol';
   small?: boolean;
+  secondary?: boolean,
   className?: string;
 }
 
@@ -11,6 +12,7 @@ const Text: React.FC<TextProps> = ({
       children = undefined,
       as = 'div',
       small = false,
+      secondary,
       className,
       ...props
 }: TextProps) => {
@@ -20,6 +22,7 @@ const Text: React.FC<TextProps> = ({
          className={[
                      'typography',
                      small && 'small',
+                     secondary && 'secondary',
                      className,
                      ].join(' ')}
          style={{

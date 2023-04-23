@@ -1,5 +1,6 @@
-.typography {         @apply text-base text-ferrum-2t;}
-.typography.small {   @apply text-sm;}
+.typography {              @apply text-base text-ferrum-2t;}
+.typography.secondary {    @apply text-ferrum-5t;}
+.typography.small {        @apply text-sm;}
 
-.typography ul {      @apply list-disc list-inside;}
-.typography ol {      @apply list-decimal list-inside;}
+.typography ul {           @apply list-disc list-inside;}
+.typography ol {           @apply list-decimal list-inside;}

@@ -2,7 +2,7 @@ import React, { PropsWithChildren } from "react";
 
 export interface HeadingProps extends PropsWithChildren {
   children: string | React.ReactNode;
-  as?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
+  as?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'span';
   size?: 'largest' | 'larger' | 'large' | 'default' | 'small' | 'tiny';
   secondary?: boolean;
   className?: string;

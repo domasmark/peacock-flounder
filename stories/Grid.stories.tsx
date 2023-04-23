@@ -34,8 +34,8 @@ Plain.args = {
   columns:"1fr 1fr",
   children: 
   <>
-    <Stack variant='card' wFull gridArea='header' justifyContent='center' border={{bottom:true}}>Header</Stack>
-    <Stack variant='card' hFull wMin='240px' justifyContent='center' border={{right:true}} alignItems='center' gridArea='sidebar'>Sidebar</Stack>
-    <Stack gridArea='main' wFull hFull alignItems='center'>Main</Stack>
+    <Stack variant='card' wFull area='header' justifyContent='center' border={{bottom:true}}>Header</Stack>
+    <Stack variant='card' hFull wMin='240px' justifyContent='center' border={{right:true}} alignItems='center' area='sidebar'>Sidebar</Stack>
+    <Stack area='main' wFull hFull alignItems='center'>Main</Stack>
   </>,
 };

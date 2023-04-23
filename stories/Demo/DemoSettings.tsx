@@ -23,7 +23,7 @@ const DemoSettings = () => {
             <Heading as='h1' size='large'>Account Settings</Heading>
             <Text secondary>Manage your login details.</Text>
          </Stack>
-         <Grid columns='repeat(2, 1fr)' gap="0.5rem">
+         <Grid cols='repeat(2, 1fr)' gap="0.5rem">
             <Label label='First name'><Input defaultValue="Forest"/></Label>
             <Label label='Last name'><Input defaultValue="Gump"/></Label>
             <Label label='Email' className='col-span-2'><Input defaultValue="forest@babagump.com"/></Label>
@@ -37,7 +37,7 @@ const DemoSettings = () => {
    );
 
    return (
-      <Grid columns='auto 1fr' rows='auto 1fr'
+      <Grid cols='auto 1fr' rows='auto 1fr'
                areas={[
                      ['topbar', 'topbar'],
                      ['sidenav', 'main']]}>

@@ -1,7 +1,7 @@
 import React, { ReactNode } from 'react';
 
 export interface GridProps {
-  columns?: string;
+  cols?: string;
   rows?: string;
   areas?: string[][];
   gap?: string;
@@ -9,14 +9,14 @@ export interface GridProps {
 }
 
 const Grid = ({
-  columns,
+  cols,
   rows,
   areas = [],
   gap = '0',
   children,
 }: GridProps) => {
   const gridStyle = {
-    gridTemplateColumns: columns,
+    gridTemplateColumns: cols,
     gridTemplateRows: rows,
     gridTemplateAreas: areas.map(row => `"${row.join(' ')}"`).join('\n'),
     gap

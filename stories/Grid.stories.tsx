@@ -31,7 +31,7 @@ Plain.args = {
     ['sidebar', 'main'],
   ],
   rows:"auto 1fr 1fr",
-  columns:"1fr 1fr",
+  cols:"1fr 1fr",
   children: 
   <>
     <Stack variant='card' wFull area='header' justifyContent='center' border={{bottom:true}}>Header</Stack>

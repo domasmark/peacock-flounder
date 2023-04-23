@@ -1,4 +1,13 @@
-# TSDX React w/ Storybook User Guide
+# How to run it
+
+1. `yarn`
+2. `yarn start`
+3. `yarn storybook` in the new terminal
+
+----
+
+
+## Other notes
 
 Congrats! You just saved yourself hours of work by bootstrapping this project with TSDX. Let’s get you oriented with what’s here and how to use it.
 

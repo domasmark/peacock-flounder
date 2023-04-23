@@ -5,7 +5,7 @@ import Tooltip from "../Tooltip"
 export interface ButtonProps {
   label: string;
   helpText?: string;
-  style?: 'strong' | 'light' | 'transparent';
+  variant?: 'strong' | 'light' | 'transparent';
   selected?: boolean;
   icon?: JSX.Element;
   labelPlacement?: 'start' | 'end' | 'tooltip';
@@ -17,7 +17,7 @@ export interface ButtonProps {
 const Button = ({
       label,
       helpText,
-      style = 'strong',
+      variant = 'strong',
       selected = false,
       icon,
       labelPlacement = 'end',
@@ -40,7 +40,7 @@ const Button = ({
    const button = (
       <button
             type='button'
-            className={['button', `style--${style}`, selectedClass, iconButtonClass, wFullClass].join(' ')}
+            className={['button', `variant--${variant}`, selectedClass, iconButtonClass, wFullClass].join(' ')}
             {...isIconButton && {'aria-label' : [label, helpText].join(', ')}}
             {...props}
          >

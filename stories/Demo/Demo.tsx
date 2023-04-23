@@ -56,7 +56,7 @@ const Header = () => {
 
    return (
       <Stack as="header" alignItems="center" variant="card" border={{bottom:true}} wFull>
-      <Button style='light' icon={<IconArrowLeft/>}  label='Back to All Projects'/>
+      <Button variant='light' icon={<IconArrowLeft/>}  label='Back to All Projects'/>
          <Stack wFull alignItems='center' gap={2} justifyContent="center">
             <Stack variant='slip'>
                { textAlignToggle.map(((button, index) =>
@@ -64,7 +64,7 @@ const Header = () => {
                      key={index} 
                      selected={selectedTabIndex === index}
                      onClick={() => handleTabClick(index)}
-                     style="light"
+                     variant="light"
                      labelPlacement='tooltip'
                      icon={button.icon}
                      label={button.label}
@@ -77,15 +77,15 @@ const Header = () => {
                      key={index}
                      onClick={() => handleButtonClick(index)}
                      selected={button.selected}
-                     style="light" labelPlacement='tooltip'
+                     variant="light" labelPlacement='tooltip'
                      icon={button.icon}
                      label={button.label}
                   />
                ))}
             </Stack>
          </Stack>
-         <Button style="light" labelPlacement='end' label="Push to Github..." icon={<IconGithub/>} />
-         <Button style="strong" labelPlacement='start' icon={<IconChevronDown/>} label="Versions" />
+         <Button variant="light" labelPlacement='end' label="Push to Github..." icon={<IconGithub/>} />
+         <Button variant="strong" labelPlacement='start' icon={<IconChevronDown/>} label="Versions" />
       </Stack>
    );
 };
@@ -96,13 +96,13 @@ const Demo = () => (
       <Stack wFull hFull>
          <Stack as="nav" variant="card" border={{right:true}} vertical hFull wMin="240px" >
             <Input placeholder="Filter layers..."/>
-            { layers.map(((layer) => <Button style="transparent" icon={<IconChevronRight/>} label={layer.label} wFull />))}
+            { layers.map(((layer) => <Button variant="transparent" icon={<IconChevronRight/>} label={layer.label} wFull />))}
          </Stack>
          <Stack wFull hFull><Canvas/></Stack>
          <Stack as="nav" variant="card" border={{left:true}} vertical hFull wMin="240px" >
             <Heading as="h2" size='small' secondary>Version history</Heading>
             { changes.map((log =>
-               <Button style="transparent" icon={<IconDot/>} label={log.label} helpText={log.date} wFull />
+               <Button variant="transparent" icon={<IconDot/>} label={log.label} helpText={log.date} wFull />
             ))}
          </Stack>
       </Stack>

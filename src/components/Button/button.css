@@ -21,48 +21,48 @@
 }
 
 /* strong */
-.button.style--strong { @apply
+.button.variant--strong { @apply
                                           text-white
                                           bg-cobalt
                                           hover:bg-cobalt-9t
                                           active:bg-cobalt-8t;}
-.button.style--strong .helpText { @apply  text-cobalt-3t;}
-.button.style--strong.selected--true { @apply
+.button.variant--strong .helpText { @apply  text-cobalt-3t;}
+.button.variant--strong.selected--true { @apply
                                           text-cobalt-3t
                                           bg-cobalt-5s
                                           hover:bg-cobalt-4s
                                           active:bg-cobalt-3s;}
-.button.style--strong.selected--true .helpText { @apply
+.button.variant--strong.selected--true .helpText { @apply
                                           text-cobalt-5t;}
 
 /* light */
-.button.style--light { @apply
+.button.variant--light { @apply
                                           text-white
                                           bg-ferrum
                                           hover:bg-ferrum-9t
                                           active:bg-ferrum-8t;}
-.button.style--light .helpText { @apply
+.button.variant--light .helpText { @apply
                                           text-ferrum-3t;}
-.button.style--light.selected--true { @apply
+.button.variant--light.selected--true { @apply
                                           text-ferrum-4t
                                           bg-ferrum-5s
                                           hover:bg-ferrum-4s
                                           active:bg-ferrum-3s;}
-.button.style--light.selected--true .helpText { @apply
+.button.variant--light.selected--true .helpText { @apply
                                           text-ferrum-6t;}
 
 /* transparent */
-.button.style--transparent { @apply
+.button.variant--transparent { @apply
                                           text-ferrum-2t
                                           bg-transparent
                                           hover:bg-ferrum-1s
                                           active:bg-ferrum;}
-.button.style--transparent .helpText { @apply
+.button.variant--transparent .helpText { @apply
                                           text-ferrum-4t;}
-.button.style--transparent.selected--true { @apply
+.button.variant--transparent.selected--true { @apply
                                           text-ferrum-2t
                                           bg-ferrum-9t
                                           hover:bg-ferrum-8t
                                           active:bg-ferrum-7t;}
-.button.style--transparent.selected--true .helpText { @apply
+.button.variant--transparent.selected--true .helpText { @apply
                                           text-ferrum-4t;}

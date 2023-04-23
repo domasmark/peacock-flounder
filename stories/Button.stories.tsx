@@ -34,7 +34,7 @@ export const Text_icon = Template.bind({});
 Text_icon.args = {
   label: 'More Actions',
   labelPlacement: 'start',
-  style: 'light',
+  variant: 'light',
   icon: <IconChevronDown/>,
   selected: false,
 };
@@ -44,7 +44,7 @@ Icon.args = {
   label: 'More Actions',
   helpText: 'Click to see options',
   labelPlacement: 'tooltip',
-  style: 'light',
+  variant: 'light',
   icon: <IconMore/>,
   selected: false,
 };
@@ -54,7 +54,7 @@ Thicc.args = {
   label: 'Github',
   helpText: 'Go to view source',
   labelPlacement: 'end',
-  style: 'light',
+  variant: 'light',
   icon: <IconGithub/>,
   selected: false,
 };

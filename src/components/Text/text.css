@@ -1,0 +1,5 @@
+.typography {         @apply text-base;}
+.typography.small {   @apply text-sm;}
+
+.typography ul {      @apply list-disc list-inside;}
+.typography ol {      @apply list-decimal list-inside;}

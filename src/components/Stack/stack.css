@@ -1,13 +1,14 @@
-.stack {                            @apply flex items-start w-fit h-fit;}
-
+.stack {                            
+   @apply flex items-start w-fit h-fit;
+}
 .stack.style--blank {
    @apply gap-0 p-0 rounded-none bg-transparent border-transparent border-0;
 }
 .stack.style--box {
-   @apply gap-1 p-2 rounded-none bg-ferrum-shade-2 border-ferrum;
+   @apply gap-1 p-2 rounded-none bg-ferrum-2s border-ferrum;
 }
 .stack.style--board {
-   @apply gap-1 p-1 rounded-lg bg-ferrum-shade-5 border-transparent border-0;
+   @apply gap-1 p-1 rounded-lg bg-ferrum-5s border-transparent border-0;
 }
 
 .stack.vertical {                   @apply flex-col;}

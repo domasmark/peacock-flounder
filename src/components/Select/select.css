@@ -1,10 +1,4 @@
 .select { @apply
    px-[calc(theme(space.2)_-_theme(space.px))]
    py-[calc(theme(space.1)_-_theme(space.px))] w-full
-   border border-slate-700 rounded
-   hover:border-slate-600
-   bg-slate-800
-   font-medium
-   text-white
-   placeholder:text-slate-500;
 }

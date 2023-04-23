@@ -1,6 +1,6 @@
 {
   // see https://www.typescriptlang.org/tsconfig to better understand tsconfigs
-  "include": ["src", "types", "stories/Stack.stories.tsx", "stories/Select.stories.tsx", "stories/Input.stories.tsx", "stories/TextArea.stories.tsx", "stories/Tooltip.stories.tsx", "stories/Button.stories.tsx"],
+  "include": ["src", "types", "stories/Stack.stories.tsx", "stories/Select.stories.tsx", "stories/Input.stories.tsx", "stories/TextArea.stories.tsx", "stories/Tooltip.stories.tsx", "stories/Button.stories.tsx", "stories/Tooltip.story.example.tsx"],
   "compilerOptions": {
     "module": "esnext",
     "lib": ["dom", "esnext"],
@@ -10,7 +10,7 @@
     // output .js.map sourcemap files for consumers
     "sourceMap": true,
     // match output dir to input dir. e.g. dist/index instead of dist/src/index
-    "rootDir": "./src",
+    "rootDir": "./",
     // stricter type-checking for stronger correctness. Recommended by TS
     "strict": true,
     // linter checks for common issues

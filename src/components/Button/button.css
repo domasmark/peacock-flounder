@@ -24,45 +24,45 @@
 .button.style--strong { @apply
                                           text-white
                                           bg-cobalt
-                                          hover:bg-cobalt-tint-9
-                                          active:bg-cobalt-tint-8;}
-.button.style--strong .helpText { @apply  text-cobalt-tint-3;}
+                                          hover:bg-cobalt-9t
+                                          active:bg-cobalt-8t;}
+.button.style--strong .helpText { @apply  text-cobalt-3t;}
 .button.style--strong.selected--true { @apply
-                                          text-cobalt-tint-3
-                                          bg-cobalt-shade-5
-                                          hover:bg-cobalt-shade-4
-                                          active:bg-cobalt-shade-3;}
+                                          text-cobalt-3t
+                                          bg-cobalt-5s
+                                          hover:bg-cobalt-4s
+                                          active:bg-cobalt-3s;}
 .button.style--strong.selected--true .helpText { @apply
-                                          text-cobalt-tint-5;}
+                                          text-cobalt-5t;}
 
 /* light */
 .button.style--light { @apply
                                           text-white
                                           bg-ferrum
-                                          hover:bg-ferrum-tint-9
-                                          active:bg-ferrum-tint-8;}
+                                          hover:bg-ferrum-9t
+                                          active:bg-ferrum-8t;}
 .button.style--light .helpText { @apply
-                                          text-ferrum-tint-3;}
+                                          text-ferrum-3t;}
 .button.style--light.selected--true { @apply
-                                          text-ferrum-tint-4
-                                          bg-ferrum-shade-5
-                                          hover:bg-ferrum-shade-4
-                                          active:bg-ferrum-shade-3;}
+                                          text-ferrum-4t
+                                          bg-ferrum-5s
+                                          hover:bg-ferrum-4s
+                                          active:bg-ferrum-3s;}
 .button.style--light.selected--true .helpText { @apply
-                                          text-ferrum-tint-6;}
+                                          text-ferrum-6t;}
 
 /* transparent */
 .button.style--transparent { @apply
-                                          text-ferrum-tint-2
+                                          text-ferrum-2t
                                           bg-transparent
-                                          hover:bg-ferrum-shade-1
+                                          hover:bg-ferrum-1s
                                           active:bg-ferrum;}
 .button.style--transparent .helpText { @apply
-                                          text-ferrum-tint-4;}
+                                          text-ferrum-4t;}
 .button.style--transparent.selected--true { @apply
-                                          text-ferrum-tint-2
-                                          bg-ferrum-tint-9
-                                          hover:bg-ferrum-tint-8
-                                          active:bg-ferrum-tint-7;}
+                                          text-ferrum-2t
+                                          bg-ferrum-9t
+                                          hover:bg-ferrum-8t
+                                          active:bg-ferrum-7t;}
 .button.style--transparent.selected--true .helpText { @apply
-                                          text-ferrum-tint-4;}
+                                          text-ferrum-4t;}

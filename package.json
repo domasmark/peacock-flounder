@@ -1,7 +1,13 @@
 {
   "version": "0.0.1",
   "license": "ISC",
+  "name": "peacock-flounder",
+  "description": "Simple UI Kit built using Chat GPT.",
+  "homepage": "https://github.com/domasmark/peacock-flounder.git",
+  "repository": "https://github.com/domasmark/peacock-flounder.git",
+  "author": "Domas Markevičius <domas.marko@gmail.com>",
   "main": "dist/index.js",
+  "module": "dist/PeacockFlounder.esm.js",
   "typings": "dist/index.d.ts",
   "files": [
     "dist",
@@ -35,12 +41,6 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "peacock-flounder",
-  "description": "Simple UI Kit built using Chat GPT.",
-  "homepage": "https://github.com/domasmark/peacock-flounder.git",
-  "repository": "https://github.com/domasmark/peacock-flounder.git",
-  "author": "Domas Markevičius <domas.marko@gmail.com>",
-  "module": "dist/PeacockFlounder.esm.js",
   "size-limit": [
     {
       "path": "dist/PeacockFlounder.cjs.production.min.js",

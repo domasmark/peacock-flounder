@@ -7,18 +7,9 @@ import { IconChevronDown, IconGithub, IconMore, IconRemove } from '../src/compon
 export default {
   title: 'My components/Button',
   component: Button,
-  decorators: [
-    (Story) => (
-      <div style={{
-                    margin: '6em',
-                    display: 'flex',
-                    justifyContent: 'center',
-                  }}>
-        <Story />
-      </div>
-    ),
-  ],
-  // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
+  parameters: {
+    layout: 'centered',
+  },
 } as ComponentMeta<typeof Button>;
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args

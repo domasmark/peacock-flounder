@@ -13,9 +13,7 @@ export default {
     as: {control: 'text'},
   },
   parameters: {
-    // More on Story layout: https://storybook.js.org/docs/react/configure/story-layout
     layout: 'fullscreen',
-    
   },
   decorators: [
     (Story) => (
@@ -26,10 +24,8 @@ export default {
       </div>
     ),
   ],
-  // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
 } as ComponentMeta<typeof Stack>;
 
-// More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
 const Template: ComponentStory<typeof Stack> = (args: StackProps) => <Stack {...args} />;
 
 export const Plain = Template.bind({});

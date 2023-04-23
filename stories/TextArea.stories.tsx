@@ -14,5 +14,5 @@ const Template: ComponentStory<typeof TextArea> = (args) => <TextArea {...args} 
 
 export const Plain = Template.bind({});
 Plain.args = {
-   placeholder: 'bananai',
+   placeholder: 'Placeholder...',
 };

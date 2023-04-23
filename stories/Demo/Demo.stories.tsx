@@ -3,7 +3,7 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 import Demo from './Demo';
 
 export default {
-  title: 'App',
+  title: 'Demo/App',
   component: Demo,
   parameters: {
     layout: 'fullscreen',

@@ -1,6 +1,6 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import Select from '../src/components/Select/Select';
+import Select from '../src/components/Select';
 
 export default {
   title: 'My components/Select',
@@ -17,5 +17,9 @@ const Template: ComponentStory<typeof Select> = (args) => <Select {...args} />;
 
 export const Plain = Template.bind({});
 Plain.args = {
-   placeholder: 'bananai',
+  options: [
+    { value: "1", label: "Option 1" },
+    { value: "2", label: "Option 2" },
+    { value: "3", label: "Option 3" }
+  ],
 };

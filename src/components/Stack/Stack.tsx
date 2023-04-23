@@ -1,27 +1,35 @@
 import React, { PropsWithChildren } from "react";
 
+type BorderProps = {
+   all?: boolean;
+   top?: boolean;
+   right?: boolean;
+   bottom?: boolean;
+   left?: boolean;
+ };
+
 export interface StackProps extends PropsWithChildren {
-  children?: React.ReactNode;
-  as?: keyof JSX.IntrinsicElements;
-  style?: 'blank' | 'box' | 'board';
-  alignItems?: 'center' | 'flex-start' | 'flex-end' | 'stretch' | 'baseline';
-  justifyContent?: 'start' | 'end' | 'center' | 'between';
-  border?: 'none' | 'all' | 'top' | 'bottom' | 'left' | 'right' | 'x' | 'y'; 
-  gap?: 'none' | 1 | 2;
-  vertical?: boolean;
-  wFull?: boolean;
-  hFull?: boolean;
-  wMin?: string;
-  hMin?: string;
-  wMax?: string;
-  hMax?: string;
+   children?: React.ReactNode;
+   as?: keyof JSX.IntrinsicElements;
+   style?: 'blank' | 'box' | 'board';
+   alignItems?: 'center' | 'flex-start' | 'flex-end' | 'stretch' | 'baseline';
+   justifyContent?: 'start' | 'end' | 'center' | 'between';
+   border?: BorderProps;
+   gap?: 'none' | 1 | 2;
+   vertical?: boolean;
+   wFull?: boolean;
+   hFull?: boolean;
+   wMin?: string;
+   hMin?: string;
+   wMax?: string;
+   hMax?: string;
 }
 
 const Stack: React.FC<StackProps> = ({
       children = undefined,
       as = 'div',
       style = 'blank',
-      border = 'none',
+      border,
       vertical = false,
       wFull = false,
       hFull = false,
@@ -31,6 +39,13 @@ const Stack: React.FC<StackProps> = ({
       ...props
 }: StackProps) => {
    const Tag = as;
+   const borderClasses = [
+      border?.all && "border--all",
+      border?.top && "border--top",
+      border?.right && "border--right",
+      border?.bottom && "border--bottom",
+      border?.left && "border--left",
+    ].filter(Boolean).join(" ");
    return (
       <Tag
          className={[
@@ -38,7 +53,7 @@ const Stack: React.FC<StackProps> = ({
                      `style--${style}`,
                      `alignItems--${alignItems}`,
                      `justifyContent--${justifyContent}`,
-                     `border--${border}`,
+                     borderClasses,
                      gap ? `gap--${gap}` : undefined,
                      wFull ? 'w-full' : undefined,
                      hFull ? 'h-full' : undefined,

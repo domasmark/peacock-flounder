@@ -34,8 +34,6 @@
 .stack.border--bottom {             @apply border-b;}
 .stack.border--left {               @apply border-l;}
 .stack.border--right {              @apply border-r;}
-.stack.border--x {                  @apply border-x;}
-.stack.border--y {                  @apply border-y;}
 
 .stack.gap--none {                  @apply gap-0;}
 .stack.gap--1 {                     @apply gap-1;}

@@ -54,7 +54,7 @@ const Header = () => {
    };
 
    return (
-      <Stack as="header" alignItems="center" style="box" border="bottom" wFull>
+      <Stack as="header" alignItems="center" style="box" border={{bottom:true}} wFull>
       <Button style='light' icon={<IconArrowLeft/>}  label='Back to All Projects'/>
          <Stack wFull alignItems='center' gap={2} justifyContent="center">
             <Stack style='board'>
@@ -93,12 +93,12 @@ const Demo = () => (
    <Stack wFull hFull vertical>
       <Header/>
       <Stack wFull hFull>
-         <Stack as="nav" style="box" border="right" vertical hFull wMin="240px" >
+         <Stack as="nav" style="box" border={{right:true}} vertical hFull wMin="240px" >
             <Input placeholder="Filter layers..."/>
             { layers.map(((layer) => <Button style="transparent" icon={<IconChevronRight/>} label={layer.label} wFull />))}
          </Stack>
          <Stack wFull hFull><Canvas/></Stack>
-         <Stack as="nav" style="box" border="left" vertical hFull wMin="240px" >
+         <Stack as="nav" style="box" border={{left:true}} vertical hFull wMin="240px" >
             Version history
             { changes.map((log =>
                <Button style="transparent" icon={<IconDot/>} label={log.label} helpText={log.date} wFull />

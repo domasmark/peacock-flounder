@@ -16,7 +16,8 @@ export interface StackProps extends PropsWithChildren {
    alignItems?: 'center' | 'flex-start' | 'flex-end' | 'stretch' | 'baseline';
    justifyContent?: 'start' | 'end' | 'center' | 'between';
    border?: BorderProps;
-   gap?: 'none' | 1 | 2;
+   gap?: 0 | 1 | 2 | 3 | 4 | 5;
+   padding?: 0 | 1 | 2 | 3 | 4 | 5;
    area?: string;
    vertical?: boolean;
    wFull?: boolean;
@@ -37,7 +38,7 @@ const Stack: React.FC<StackProps> = ({
       wFull = false,
       hFull = false,
       wMin, wMax, hMin, hMax,
-      gap,
+      gap, padding,
       area,
       alignItems, justifyContent,
       ...props
@@ -59,6 +60,7 @@ const Stack: React.FC<StackProps> = ({
                      `justifyContent--${justifyContent}`,
                      borderClasses,
                      gap ? `gap--${gap}` : undefined,
+                     padding ? `padding--${padding}` : undefined,
                      wFull ? 'w-full' : undefined,
                      hFull ? 'h-full' : undefined,
                      vertical ? 'flex-col' : undefined,

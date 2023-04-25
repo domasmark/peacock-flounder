@@ -4,8 +4,14 @@
   "name": "peacock-flounder",
   "description": "Simple UI Kit built using Chat GPT.",
   "homepage": "https://github.com/domasmark/peacock-flounder.git",
-  "repository": "https://github.com/domasmark/peacock-flounder.git",
-  "author": "Domas Markevičius <domas.marko@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/domasmark/peacock-flounder.git"
+  },
+  "author": {
+    "name": "Domas Markevičius",
+    "email": "domas.marko@gmail.com"
+  },
   "main": "dist/index.js",
   "module": "dist/PeacockFlounder.esm.js",
   "typings": "dist/index.d.ts",
@@ -25,7 +31,8 @@
     "size": "size-limit",
     "analyze": "size-limit --why",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "chromatic": "npx chromatic --project-token=951c012ea3b4"
   },
   "peerDependencies": {
     "react": ">=16"
@@ -79,5 +86,10 @@
   "dependencies": {
     "@tailwindcss/aspect-ratio": "^0.4.0",
     "@tailwindcss/forms": "^0.5.2"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/domasmark/peacock-flounder/issues"
+  },
+  "readme": "ERROR: No README data found!",
+  "_id": "peacock-flounder@0.0.1"
 }

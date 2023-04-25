@@ -18,7 +18,7 @@ const DemoSettings = () => {
    );
    
    const Card = (
-      <Stack variant='card' border={{all:true}} className='mt-6' vertical wMin='600px' gap={2}>
+      <Stack variant='card' vertical wMin='600px' border={{all:true}} className='mt-12' padding={5} gap={5}>
          <Stack vertical>
             <Heading as='h1' size='large'>Account Settings</Heading>
             <Text secondary>Manage your login details.</Text>
@@ -41,7 +41,7 @@ const DemoSettings = () => {
                areas={[
                      ['topbar', 'topbar'],
                      ['sidenav', 'main']]}>
-         <Stack area='topbar' variant='card' wFull border={{bottom:true}}><Heading as='span' size='small' >Company Name</Heading></Stack>
+         <Stack area='topbar' variant='card' wFull border={{bottom:true}} className='ml-1'><Heading as='span' size='small' >Company Name</Heading></Stack>
          <Stack area='sidenav' variant='card' hFull wFull border={{right:true}} vertical wMin='180px'>{SideNav}</Stack>
          <Stack area='main' hFull wFull justifyContent='center'>{Card}</Stack>
       </Grid>

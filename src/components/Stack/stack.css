@@ -35,6 +35,16 @@
 .stack.border--left {               @apply border-l;}
 .stack.border--right {              @apply border-r;}
 
-.stack.gap--none {                  @apply gap-0;}
-.stack.gap--1 {                     @apply gap-1;}
-.stack.gap--2 {                     @apply gap-2;}
+.stack.gap--0 {                     @apply gap-0;}
+.stack.gap--1 {                     @apply gap-1;} /*Tiny*/
+.stack.gap--2 {                     @apply gap-2;} /*Small*/
+.stack.gap--3 {                     @apply gap-3;} /*Medium*/
+.stack.gap--4 {                     @apply gap-4;} /*Large*/
+.stack.gap--5 {                     @apply gap-5;} /*Huge*/
+
+.stack.padding--0 {                 @apply p-0;}
+.stack.padding--1 {                 @apply p-1;}
+.stack.padding--2 {                 @apply p-2;}
+.stack.padding--3 {                 @apply p-3;}
+.stack.padding--4 {                 @apply p-4;}
+.stack.padding--5 {                 @apply p-5;}

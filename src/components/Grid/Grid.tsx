@@ -4,7 +4,8 @@ export interface GridProps {
   cols?: string;
   rows?: string;
   areas?: string[][];
-  gap?: string;
+  gap?: 'none' | 'tiny' | 'small' | 'medium' | 'large' | 'larger' | 'largest';
+  className?: string;
   children: ReactNode;
 }
 
@@ -12,7 +13,8 @@ const Grid = ({
   cols,
   rows,
   areas = [],
-  gap = '0',
+  gap = 'none',
+  className,
   children,
 }: GridProps) => {
   const gridStyle = {
@@ -22,7 +24,11 @@ const Grid = ({
     gap
   };
 
-  return <div className='pf-grid' style={gridStyle}>{children}</div>;
+  return <div
+            className={['pf-grid', gap ? `gap--${gap}` : undefined, className,].join(' ')}
+            style={gridStyle}>
+              {children}
+          </div>;
 };
 
 export default Grid;

@@ -35,16 +35,18 @@
 .stack.border--left {               @apply border-l;}
 .stack.border--right {              @apply border-r;}
 
-.stack.gap--0 {                     @apply gap-0;}
-.stack.gap--1 {                     @apply gap-1;} /*Tiny*/
-.stack.gap--2 {                     @apply gap-2;} /*Small*/
-.stack.gap--3 {                     @apply gap-3;} /*Medium*/
-.stack.gap--4 {                     @apply gap-4;} /*Large*/
-.stack.gap--5 {                     @apply gap-5;} /*Huge*/
+.stack.gap--none {                  @apply gap-0;}
+.stack.gap--tiny {                  @apply gap-1;}
+.stack.gap--small {                 @apply gap-2;}
+.stack.gap--medium {                @apply gap-3;}
+.stack.gap--large {                 @apply gap-4;}
+.stack.gap--larger {                @apply gap-5;}
+.stack.gap--largest {               @apply gap-6;}
 
-.stack.padding--0 {                 @apply p-0;}
-.stack.padding--1 {                 @apply p-1;}
-.stack.padding--2 {                 @apply p-2;}
-.stack.padding--3 {                 @apply p-3;}
-.stack.padding--4 {                 @apply p-4;}
-.stack.padding--5 {                 @apply p-5;}
+.stack.padding--none {              @apply p-0;}
+.stack.padding--tiny {              @apply p-1;}
+.stack.padding--small {             @apply p-2;}
+.stack.padding--medium {            @apply p-3;}
+.stack.padding--large {             @apply p-4;}
+.stack.padding--larger {            @apply p-5;}
+.stack.padding--largest {           @apply p-6;}

@@ -1,2 +1,4 @@
-.label .helperText {                @apply text-sm text-ferrum-7t flex gap-1 mt-1;}
-.label.status--error .helperText {  @apply text-rose-500;}
+.label .title {                     @apply text-ferrum-2t text-sm;}
+.label .description {               @apply text-ferrum-7t text-sm;}
+.label .helpText {                @apply text-ferrum-7t text-sm;}
+.label.status--error .helpText {  @apply text-rose-500;}

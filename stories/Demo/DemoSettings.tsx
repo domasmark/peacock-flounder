@@ -18,18 +18,18 @@ const DemoSettings = () => {
    );
    
    const Card = (
-      <Stack variant='card' vertical wMin='600px' border={{all:true}} className='mt-12' padding={5} gap={5}>
+      <Stack variant='card' vertical border={{all:true}} padding='larger' gap='larger' className='m-3 md:mt-12 w-full md:w-[40rem]'>
          <Stack vertical>
             <Heading as='h1' size='large'>Account Settings</Heading>
             <Text secondary>Manage your login details.</Text>
          </Stack>
-         <Grid cols='repeat(2, 1fr)' gap="0.5rem">
-            <Label label='First name'><Input defaultValue="Forest"/></Label>
-            <Label label='Last name'><Input defaultValue="Gump"/></Label>
+         <Grid cols='repeat(2, 1fr)' gap="large">
+            <Label label='First name' className='col-span-2 md:col-span-1'><Input defaultValue="Forest"/></Label>
+            <Label label='Last name' className='col-span-2 md:col-span-1'><Input defaultValue="Gump"/></Label>
             <Label label='Email' className='col-span-2'><Input defaultValue="forest@babagump.com"/></Label>
-            <Label error helperText='Missing at least 1 uppercase letter' label='Password' description='At least 8 characters, 1 number and 1 uppercase letter' className='col-span-2'><Input defaultValue="••••••••••" type="password"/></Label>
+            <Label error helpText='Missing at least 1 uppercase letter' label='Password' description='At least 8 characters, 1 number and 1 uppercase letter' className='col-span-2'><Input defaultValue="••••••••••" type="password"/></Label>
          </Grid>
-         <Stack wFull gap={2} justifyContent='end' className='mt-2 mb-2'>
+         <Stack wFull gap='small' justifyContent='end' className='mt-2 mb-2'>
             <Button variant='light'>Dismiss</Button>
             <Button>Save Changes</Button>
          </Stack>
@@ -41,9 +41,9 @@ const DemoSettings = () => {
                areas={[
                      ['topbar', 'topbar'],
                      ['sidenav', 'main']]}>
-         <Stack area='topbar' variant='card' wFull border={{bottom:true}} className='ml-1'><Heading as='span' size='small' >Company Name</Heading></Stack>
-         <Stack area='sidenav' variant='card' hFull wFull border={{right:true}} vertical wMin='180px'>{SideNav}</Stack>
-         <Stack area='main' hFull wFull justifyContent='center'>{Card}</Stack>
+         <Stack area='topbar' variant='card' wFull border={{bottom:true}}><Heading as='span' size='small' className='ml-1' >Company Name</Heading></Stack>
+         <Stack area='sidenav' variant='card' hFull wFull border={{right:true}} vertical className='hidden min-w-[12rem] md:block'>{SideNav}</Stack>
+         <Stack area='main' wFull hFull justifyContent='center'>{Card}</Stack>
       </Grid>
    );
 };

@@ -34,8 +34,9 @@ Plain.args = {
     <>
       <Input/>
       <Input/>
-      <Button label='Lengthy Button'/>
-      <Button label='Button'/>
+      <Input/>
+      <Button label='Dismiss' variant='light'/>
+      <Button label='Confirm'/>
     </>,
   as: 'div',
   variant: 'slip',

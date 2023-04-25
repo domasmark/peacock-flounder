@@ -15,6 +15,8 @@ const Template: ComponentStory<typeof Label> = (args) => <Label {...args} />;
 
 export const Plain = Template.bind({});
 Plain.args = {
-   label: 'It works!',
+   label: 'Label',
+   description: 'Details about the input land here',
+   helpText: 'Additional insructions or error message should be placed here',
    children: <Input/>,
 };

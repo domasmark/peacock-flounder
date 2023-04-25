@@ -5,8 +5,8 @@ import Tooltip from "../src/components/Tooltip/Tooltip";
 
 const UncontrolledTooltip: React.FC = () => {
   return (
-      <Tooltip label="I'm a tooltip!" helpText='I can be placed at any side'>
-        <Button variant='light' label='Move mouse over me'/>
+      <Tooltip label="Label" helpText='Helper text'>
+        <Button variant='light' label='Hover me'/>
       </Tooltip>
   );
 };

@@ -15,9 +15,9 @@ export interface StackProps extends PropsWithChildren {
    variant?: 'blank' | 'card' | 'slip';
    alignItems?: 'center' | 'flex-start' | 'flex-end' | 'stretch' | 'baseline';
    justifyContent?: 'start' | 'end' | 'center' | 'between';
+   gap?: 'none' | 'tiny' | 'small' | 'medium' | 'large' | 'larger' | 'largest';
+   padding?: 'none' | 'tiny' | 'small' | 'medium' | 'large' | 'larger' | 'largest';
    border?: BorderProps;
-   gap?: 0 | 1 | 2 | 3 | 4 | 5;
-   padding?: 0 | 1 | 2 | 3 | 4 | 5;
    area?: string;
    vertical?: boolean;
    wFull?: boolean;

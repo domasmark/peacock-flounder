@@ -4,6 +4,6 @@
 .heading.size--largest {   @apply text-title-largest;}
 .heading.size--larger {    @apply text-title-larger;}
 .heading.size--large {     @apply text-title-large;}
-.heading.size--default {   @apply text-title;}
+.heading.size--medium {   @apply text-title;}
 .heading.size--small {     @apply text-title-small;}
 .heading.size--tiny {      @apply text-title-tiny;}

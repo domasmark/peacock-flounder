@@ -1,1 +1,8 @@
-.pf-grid { @apply grid w-full h-full;}
+.pf-grid {                            @apply grid w-full h-full;}
+.pf-grid.gap--none {                  @apply gap-0;}
+.pf-grid.gap--tiny {                  @apply gap-1;}
+.pf-grid.gap--small {                 @apply gap-2;}
+.pf-grid.gap--medium {                @apply gap-3;}
+.pf-grid.gap--large {                 @apply gap-4;}
+.pf-grid.gap--larger {                @apply gap-5;}
+.pf-grid.gap--largest {               @apply gap-6;}

@@ -2,8 +2,8 @@ import React, { PropsWithChildren } from "react";
 
 export interface HeadingProps extends PropsWithChildren {
   children: string | React.ReactNode;
-  as?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'span';
-  size?: 'largest' | 'larger' | 'large' | 'default' | 'small' | 'tiny';
+  as?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'div' | 'span';
+  size?: 'largest' | 'larger' | 'large' | 'medium' | 'small' | 'tiny';
   secondary?: boolean;
   className?: string;
 }
@@ -11,7 +11,7 @@ export interface HeadingProps extends PropsWithChildren {
 const Heading: React.FC<HeadingProps> = ({
       children = undefined,
       as = 'h1',
-      size = 'default',
+      size = 'medium',
       secondary,
       className,
       ...props

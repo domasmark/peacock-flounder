@@ -1,5 +1,5 @@
 .typography {              @apply text-base text-ferrum-2t;}
-.typography.secondary {    @apply text-ferrum-5t;}
+.typography.secondary {    @apply text-ferrum-7t;}
 .typography.small {        @apply text-sm;}
 
 .typography ul {           @apply list-disc list-inside;}

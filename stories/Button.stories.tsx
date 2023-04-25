@@ -49,10 +49,10 @@ Icon.args = {
   selected: false,
 };
 
-export const Thicc = Template.bind({});
-Thicc.args = {
+export const IconTextDesc = Template.bind({});
+IconTextDesc.args = {
   label: 'Github',
-  helpText: 'Go to view source',
+  helpText: 'Explore the source code',
   labelPlacement: 'end',
   variant: 'light',
   icon: <IconGithub/>,

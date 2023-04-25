@@ -6,7 +6,7 @@ interface LabelProps {
   label: string;
   description?: string;
   error?: boolean;
-  helperText?: string;
+  helpText?: string;
   className?: string;
 }
 
@@ -14,7 +14,7 @@ type InputProps = InputHTMLAttributes<HTMLInputElement> & {
    id: string;
  };
  
-const Label: React.FC<LabelProps> = ({ children, label, description, error, helperText, className }) => {
+const Label: React.FC<LabelProps> = ({ children, label, description, error, helpText, className }) => {
   const id = label.toLowerCase().replace(/\s+/g, '').replace(/[^a-zA-Z0-9 ]/g, '');
   const uniqueId = id + Math.floor(Math.random() * 10000);
   const errorClass = error ? 'status--error' : undefined;
@@ -23,8 +23,8 @@ const Label: React.FC<LabelProps> = ({ children, label, description, error, help
   return (
    <div className={['label',errorClass, className].join(' ')}>
     <label htmlFor={uniqueId}>
-      <div className='text-sm text-ferrum-5t'>{label}</div>
-      {description && (<div className='text-sm text-ferrum-7t mb-1'>{description}</div>)}
+      <div className='title'>{label}</div>
+      {description && (<div className='description mb-1'>{description}</div>)}
      </label>
      {React.Children.map(children, (child) => {
        if (React.isValidElement(child)) {
@@ -32,9 +32,9 @@ const Label: React.FC<LabelProps> = ({ children, label, description, error, help
        }
        return child;
      })}
-      {helperText && (<div id={helperTextId} className='helperText'>
+      {helpText && (<div id={helperTextId} className='helpText flex gap-1 mt-1'>
          {error && <IconAlertFilled aria-hidden="true"/>} 
-         {helperText}
+         {helpText}
       </div>)}
    </div>
  );

@@ -1,18 +1,18 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import TextArea from '../src/components/TextArea/TextArea';
+import TextAreaComponent from '../src/components/TextArea/TextArea';
 
 export default {
   title: 'Components/TextArea',
-  component: TextArea,
+  component: TextAreaComponent,
   parameters: {
     layout: 'centered',
   },
-} as ComponentMeta<typeof TextArea>;
+} as ComponentMeta<typeof TextAreaComponent>;
 
-const Template: ComponentStory<typeof TextArea> = (args) => <TextArea {...args} />;
+const Template: ComponentStory<typeof TextAreaComponent> = (args) => <TextAreaComponent {...args} />;
 
-export const Plain = Template.bind({});
-Plain.args = {
+export const TextArea = Template.bind({});
+TextArea.args = {
    placeholder: 'Placeholder...',
 };

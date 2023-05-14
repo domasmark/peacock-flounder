@@ -1,20 +1,20 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import Label from '../src/components/Label';
+import LabelComponent from '../src/components/Label';
 import Input from '../src/components/Input';
 
 export default {
    title: 'Components/Label',
-   component: Label,
+   component: LabelComponent,
    parameters: {
       layout: 'centered',
    },
-} as ComponentMeta<typeof Label>;
+} as ComponentMeta<typeof LabelComponent>;
 
-const Template: ComponentStory<typeof Label> = (args) => <Label {...args} />;
+const Template: ComponentStory<typeof LabelComponent> = (args) => <LabelComponent {...args} />;
 
-export const Plain = Template.bind({});
-Plain.args = {
+export const Label = Template.bind({});
+Label.args = {
    label: 'Label',
    description: 'Details about the input land here',
    helpText: 'Additional insructions or error message should be placed here',

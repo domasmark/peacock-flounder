@@ -1,18 +1,18 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import Heading from '../src/components/Heading';
+import HeadingComponent from '../src/components/Heading';
 
 export default {
    title: 'Components/Heading',
-   component: Heading,
+   component: HeadingComponent,
    parameters: {
       layout: 'centered',
    },
-} as ComponentMeta<typeof Heading>;
+} as ComponentMeta<typeof HeadingComponent>;
 
-const Template: ComponentStory<typeof Heading> = (args) => <Heading {...args} />;
+const Template: ComponentStory<typeof HeadingComponent> = (args) => <HeadingComponent {...args} />;
 
-export const Plain = Template.bind({});
-Plain.args = {
+export const Heading = Template.bind({});
+Heading.args = {
    children: "Heading",
 };

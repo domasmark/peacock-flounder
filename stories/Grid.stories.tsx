@@ -1,12 +1,11 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import Stack, { StackProps } from '../src/components/Stack/Stack';
-import Grid, {GridProps} from '../src/components/Grid/Grid';
-import Text from '../src/components/Text';
+import Stack from '../src/components/Stack/Stack';
+import GridComponent, {GridProps} from '../src/components/Grid/Grid';
 
 export default {
   title: 'Components/Grid',
-  component: Grid,
+  component: GridComponent,
   parameters: {
     layout: 'fullscreen',
   },
@@ -19,12 +18,12 @@ export default {
       </div>
     ),
   ],
-} as ComponentMeta<typeof Grid>;
+} as ComponentMeta<typeof GridComponent>;
 
-const Template: ComponentStory<typeof Grid> = (args: GridProps) => <Grid {...args} />;
+const Template: ComponentStory<typeof GridComponent> = (args: GridProps) => <GridComponent {...args} />;
 
-export const Plain = Template.bind({});
-Plain.args = {
+export const Grid = Template.bind({});
+Grid.args = {
   areas:[
     ['header', 'header'],
     ['sidebar', 'main'],

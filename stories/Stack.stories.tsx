@@ -1,12 +1,12 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import Stack, { StackProps } from '../src/components/Stack/Stack';
+import StackComponent, { StackProps } from '../src/components/Stack/Stack';
 import Button from '../src/components/Button';
 import Input from '../src/components/Input';
 
 export default {
   title: 'Components/Stack',
-  component: Stack,
+  component: StackComponent,
   argTypes: {
     style: { control: 'radio' },
     alignItems: {control: 'select'},
@@ -24,12 +24,12 @@ export default {
       </div>
     ),
   ],
-} as ComponentMeta<typeof Stack>;
+} as ComponentMeta<typeof StackComponent>;
 
-const Template: ComponentStory<typeof Stack> = (args: StackProps) => <Stack {...args} />;
+const Template: ComponentStory<typeof StackComponent> = (args: StackProps) => <StackComponent {...args} />;
 
-export const Plain = Template.bind({});
-Plain.args = {
+export const Stack = Template.bind({});
+Stack.args = {
   children: 
     <>
       <Input/>

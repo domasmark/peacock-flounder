@@ -1,13 +1,13 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 import Button from "../src/components/Button";
-import Tooltip from "../src/components/Tooltip/Tooltip";
+import TooltipComponent from "../src/components/Tooltip/Tooltip";
 
 const UncontrolledTooltip: React.FC = () => {
   return (
-      <Tooltip label="Label" helpText='Helper text'>
+      <TooltipComponent label="Label" helpText='Helper text'>
         <Button variant='light' label='Hover me'/>
-      </Tooltip>
+      </TooltipComponent>
   );
 };
 
@@ -21,4 +21,4 @@ export default {
 
 const Template: ComponentStory<typeof UncontrolledTooltip> = (args) => <UncontrolledTooltip {...args} />;
 
-export const Plain = Template.bind({});
+export const Tooltip = Template.bind({});

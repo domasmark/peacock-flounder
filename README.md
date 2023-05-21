@@ -1,37 +1,37 @@
 # Peacock Flounder UI
 
-## Install
+### Install
 
 Type the commmand to install
 `yarn` or `npm instal`
 
-## Run
+### Run
 
 Type the command to start running Tailwind CSS and Storybook
 `yarn start` or `npm start`
 
-## License
+### License
 
 [ISC](./LICENSE)
 
-## Components
+### Components
 
-[View components in Storybook](https://64454072e5893986554c85a8-mnifbpyuxb.chromatic.com/)
+[Go to Storybook](https://64454072e5893986554c85a8-mnifbpyuxb.chromatic.com/)
 
-## Figma Assets
+### Figma Assets
 
 [Get Figma Assets](https://64454072e5893986554c85a8-mnifbpyuxb.chromatic.com/)
 
 ## Details
 
-This library is a result of an experiment done by a designer using Chat GPT. The creation of this library helped him to learn code and test ideas. Read about the creation the process: Link will be added to Medium
+This library is the result of an experiment conducted by a designer using Chat GPT. The creation of this library helped him learn code and test ideas. You can read about the creation process: Link will be added to Medium.
 
 The library was started using [this template](https://github.com/amitavdevzone/reactjs-tailwind-ui-storybook). It's based on [React](https://react.dev/) and [Tailwind CSS](https://tailwindcss.com/).
 
-The core idea of this library is to provide as much verstatility as possible with the fewest number of components. The library provides styled core components, while the whole layouting is supposed to be done by using Tailwind CSS. Although, all major layouting CSS properties are exposed to `Stack` component as React props too. Example:
+The core idea behind this library is to maximize versatility while minimizing the number of components. The library provides styled core components, while the overall layouting is intended to be done using Tailwind CSS. However, all major layouting CSS properties are exposed to the `Stack` and `Grid` components as React props too. Here's an example:
 
     <Stack variant='slip' gap='small' className='w-full items-center justify-center'>
-        { textAlignToggle.map(((button, index) =>
+        { toolbarControls.map((button, index) =>
             <Button
                 key={index} 
                 selected={selectedTabIndex === index}
@@ -41,7 +41,7 @@ The core idea of this library is to provide as much verstatility as possible wit
                 icon={button.icon}
                 label={button.label}
             />
-        ))}
+        )}
     </Stack>
 
-Peacock Flounder is a fish that can change its color. The idea is to introduce a theming capability to this library someday, so its components can disguise in various colours.
+[Peacock Flounder](https://en.wikipedia.org/wiki/Peacock_flounder) is a fish that can change its color. The idea behind the name was to introduce a theming capability to this library someday, so its components can disguise themselves in various styles.

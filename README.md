@@ -1,28 +1,28 @@
 # Peacock Flounder UI
 
-# Install
+## Install
 
 Type the commmand to install
 `yarn` or `npm instal`
 
-# Run
+## Run
 
 Type the command to start running Tailwind CSS and Storybook
 `yarn start` or `npm start`
 
-# License
+## License
 
 [ISC](./LICENSE)
 
-# Components
+## Components
 
 [View components in Storybook](https://64454072e5893986554c85a8-mnifbpyuxb.chromatic.com/)
 
-# Figma Assets
+## Figma Assets
 
 [Get Figma Assets](https://64454072e5893986554c85a8-mnifbpyuxb.chromatic.com/)
 
-# Details
+## Details
 
 This library is a result of an experiment done by a designer using Chat GPT. The creation of this library helped him to learn code and test ideas. Read about the creation the process: Link will be added to Medium
 

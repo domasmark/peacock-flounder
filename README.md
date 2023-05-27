@@ -20,7 +20,7 @@ Type the command to start running Tailwind CSS and Storybook
 
 ### Figma Assets
 
-[Get Figma Assets](https://64454072e5893986554c85a8-mnifbpyuxb.chromatic.com/)
+[Get Figma Assets](https://www.figma.com/community/file/1244230497140495328)
 
 ## Details
 

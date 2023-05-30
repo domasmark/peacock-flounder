@@ -24,7 +24,8 @@ Type the command to start running Tailwind CSS and Storybook
 
 ## Details
 
-This library is the result of an experiment conducted by a designer using Chat GPT. The creation of this library helped him learn code and test ideas. You can read about the creation process: Link will be added to Medium.
+This library is the result of an experiment conducted by a designer using Chat GPT. The creation of this library helped him learn code and test ideas. You can read about the creation process in this article:
+https://medium.com/@domasmark/how-ai-powered-coding-transformed-the-design-process-7fae647fee85
 
 The library was started using [this template](https://github.com/amitavdevzone/reactjs-tailwind-ui-storybook). It's based on [React](https://react.dev/) and [Tailwind CSS](https://tailwindcss.com/).
 

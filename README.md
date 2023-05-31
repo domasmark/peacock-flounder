@@ -46,3 +46,9 @@ The core idea behind this library is to maximize versatility while minimizing th
     </Stack>
 
 [Peacock Flounder](https://en.wikipedia.org/wiki/Peacock_flounder) is a fish that can change its color. The idea behind the name was to introduce a theming capability to this library someday, so its components can disguise themselves in various styles.
+
+## What's Next
+
+- Tests.
+- Release as npm package.
+- Checkbox and Select components.

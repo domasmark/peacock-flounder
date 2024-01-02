@@ -1,9 +1,12 @@
 {
   "version": "0.0.1",
   "license": "ISC",
-  "name": "peacock-flounder",
+  "name": "@domasmark/peacock-flounder",
   "description": "Simple UI Kit built using Chat GPT.",
   "homepage": "https://github.com/domasmark/peacock-flounder.git",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/domasmark"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/domasmark/peacock-flounder.git"

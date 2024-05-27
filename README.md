@@ -16,7 +16,7 @@ Type the command to start running Tailwind CSS and Storybook
 
 ### Components
 
-[Go to Storybook](https://64454072e5893986554c85a8-sxvzqsxfbb.chromatic.com/)
+[Go to Storybook](https://64454072e5893986554c85a8-sxvzqsxfbb.chromatic.com/?path=/story/demo-editor--editor)
 
 ### Figma Assets
 
